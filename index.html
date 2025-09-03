@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modal</title>
+</head>
+
+<body>
+
+    <!-- Botão para abrir o modal -->
+    <button class="abrir-modal" data-modal="modal-1">Abrir modal</button>
+
+    <!-- Modal -->
+    <dialog id="modal-1">
+
+        <!-- Formulário do modal -->
+        <form>
+            <div class="cabecalho-modal">
+                <h1 class="titulo-modal">Faça login na nossa plataforma!</h1>
+                <button class="fechar-modal" data-modal="modal-1" type="button">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Corpo do modal -->
+            <div class="corpo-modal">
+                <div class="grupo-campos">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="nome@email.com">
+                </div>
+                <div class="corpo-modal">
+                    <div class="grupo-campos">
+                        <label for="senha">Senha</label>
+                        <input type="senha" name="senha" id="senha" placeholder="•••••••">
+                    </div>
+                </div>
+
+                <!-- Esqueci minha senha -->
+                <div class="opcoes-senha">
+                    <div class="lembrar-senha">
+                        <input type="checkbox" name="lembrar-senha" id="lembrar-senha">
+                        <label for="lembrar-senha">Lembrar de mim</label>
+                    </div>
+                    <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
+                </div>
+
+                <!-- Login -->
+                <button id="botao-login">Entrar na minha conta</button>
+
+                <!-- Não registrado -->
+                <div class="registrar">
+                    <span>Não registrado?</span>
+                    <a href="#">Cadastre-se aqui</a>
+                </div>
+        </form>
+    </dialog>
+
+    <!-- Conecta o JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
